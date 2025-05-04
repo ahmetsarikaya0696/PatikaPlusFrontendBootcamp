@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #5c5979;
+  --secondary-bg-color: #9c6666;
+  --third-bg-color: #6389c4;
+  --text-color: white;
+  --main-color: #007bff;
+}
+
+header {
+  position: fixed;
+  background-color: var(--bg-color);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2rem 10rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
+nav a:hover {
+  color: var(--main-color);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.home {
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.quote-container {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.info {
+  padding: 0 10rem;
+  font-size: 2rem;
+  height: 100vh;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.books {
+  pad: 0 10rem;
+  font-size: 2rem;
+  height: 100vh;
+  background-color: var(--third-bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
