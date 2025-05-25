@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Kit</title>
+</head>
+<body">
+<div class="container">
+    <div>
+        <img src="drum.png" alt="Drum Kit" />
+    </div>
+    <div class="drum-kit">
+        <button class="drum" id="w">W</button>
+        <button class="drum" id="a">A</button>
+        <button class="drum" id="s">S</button>
+        <button class="drum" id="d">D</button>
+        <button class="drum" id="j">J</button>
+        <button class="drum" id="k">K</button>
+        <button class="drum" id="l">L</button>
+        <button class="drum" id="t">T</button>
+        <button class="drum" id="y">Y</button>
+    </div>
+</div>
+<script>
+    document.getElementById("w").addEventListener("click", function() {
+        const audio = new Audio("sounds/boom.wav");
+        audio.play();
+    });
+
+    document.getElementById("a").addEventListener("click", function() {
+        const audio = new Audio("sounds/clap.wav");
+        audio.play();
+    });
+
+    document.getElementById("s").addEventListener("click", function() {
+        const audio = new Audio("sounds/hihat.wav");
+        audio.play();
+    });
+
+    document.getElementById("d").addEventListener("click", function() {
+        const audio = new Audio("sounds/kick.wav");
+        audio.play();
+    });
+
+    document.getElementById("j").addEventListener("click", function() {
+        const audio = new Audio("sounds/openhat.wav");
+        audio.play();
+    });
+
+    document.getElementById("k").addEventListener("click", function() {
+        const audio = new Audio("sounds/ride.wav");
+        audio.play();
+    });
+
+    document.getElementById("l").addEventListener("click", function() {
+        const audio = new Audio("sounds/snare.wav");
+        audio.play();
+    });
+
+    document.getElementById("t").addEventListener("click", function() {
+        const audio = new Audio("sounds/tink.wav");
+        audio.play();
+    });
+
+    document.getElementById("y").addEventListener("click", function() {
+        const audio = new Audio("sounds/tom.wav");
+        audio.play();
+    });
+</script>
+</body>
+</html>

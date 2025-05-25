@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.drum {
+  background-color: rgb(133, 133, 224);
+  color:  white;
+  border: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 25%;
+}
